@@ -131,3 +131,18 @@ li, a{
   left: 8%;
   padding: 20px;
 }
+
+.subtitle{
+  background-color: lightgrey;
+  height: 150px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.subtitle p{
+  color: grey;
+}
+
+.subtitle *{
+  padding-top: 20px;
+}
