@@ -73,6 +73,7 @@ header{
 
 .nav-1, .nav-2{
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 li{
@@ -130,6 +131,7 @@ li, a{
   bottom: 13%;
   left: 8%;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 .subtitle{
@@ -145,4 +147,22 @@ li, a{
 
 .subtitle *{
   padding-top: 20px;
+}
+
+.container-section{
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.col img{
+  height: 300px;
+}
+
+.col{
+  float: left;
+  width:calc(100% / 3);
+  height: 100%;
+
 }
