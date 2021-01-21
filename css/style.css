@@ -152,17 +152,41 @@ li, a{
 .container-section{
   width: 80%;
   margin: auto;
-  height: 300px;
+  height: 250px;
   padding-top: 20px;
 }
 
 .col img{
-  height: 300px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .col{
   float: left;
   width:calc(100% / 3);
   height: 100%;
+}
 
+.col h3{
+  text-align: center;
+}
+
+.green-title{
+  padding: 20px 0;;
+  color: #7CBB02;
+  font-size: 24px;
+}
+
+.mini-hr{
+  width: 20%;
+  margin: auto;
+  color: #D3D3D3;
+}
+
+.text-section{
+  color: grey;
+  margin: 25px 0;
 }
