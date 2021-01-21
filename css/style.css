@@ -12,6 +12,8 @@ body{
 
 header{
   background-color:#0C325A;
+  position: relative;
+
 }
 
 .clearfix::after{
@@ -29,7 +31,7 @@ header{
 
 .logo{
   background-image: url('../img/logo.svg');
-  height: 300px;
+  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   width: 10%;
@@ -89,4 +91,43 @@ li, a{
 
 .button-color{
   background-color: green;
+}
+
+.hero{
+  position:relative;
+  height: 600px;
+  background-color: #0C325A;
+}
+
+#img-hero{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.titolo-hero{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  font-size: 60px;
+  color: white;
+}
+
+.hero li {
+  display: inline-block;
+}
+
+.hero li a{
+  text-decoration: none;
+  background-color: green;
+}
+
+.button-special{
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+  padding: 20px;
 }
