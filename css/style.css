@@ -71,7 +71,7 @@ hr{
   display: inline-block;
 }
 
-.nav-2 ul li a :first-child{
+.nav-2 ul :first-child{
   color: white;
 }
 
@@ -225,6 +225,7 @@ li{
   margin-bottom: 20px;
 }
 
+/* section bottom ed help button */
 .container-section-bottom{
   background-color: lightgrey;
   height: 170px;
@@ -234,7 +235,6 @@ li{
 .text-section-bottom{
   width: 80%;
   margin: auto;
-
 }
 
 .text-section-bottom h4{
