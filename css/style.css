@@ -10,10 +10,17 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* header/logo e hero */
 header{
   background-color:#0C325A;
   position: relative;
+  overflow: hidden;
+}
 
+hr{
+  width: 95%;
+  margin: auto;
+  border: 1px solid #D3D3D3;
 }
 
 .clearfix::after{
@@ -22,7 +29,7 @@ header{
   clear: both;
 }
 
-.container-head{
+.container-nav-logo{
   background-color: #0C325A;
   width: 80%;
   height: 100px;
@@ -40,11 +47,9 @@ header{
 }
 
 .nav-1{
-  display: inline-block;
   width: 40%;
   float: left;
   margin-left: 3%;
-
 }
 
 .nav-1 li{
@@ -66,10 +71,13 @@ header{
   display: inline-block;
 }
 
+.nav-2 ul li a :first-child{
+  color: white;
+}
+
 .nav-2 a{
   text-decoration: none;
 }
-
 
 .nav-1, .nav-2{
   margin-top: 40px;
@@ -80,7 +88,7 @@ li{
   margin-right: 2%;
 }
 
-li, a{
+.nav-1 a, .nav-2 li a, .hero a{
   color: white;
 }
 
@@ -103,16 +111,15 @@ li, a{
 #img-hero{
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -60px;
   width: 60%;
-  height: 80%;
-  object-fit: cover;
 }
 
 .titolo-hero{
   position: absolute;
   top: 50%;
   left: 8%;
+  transform: translateY(-50%);
   font-size: 60px;
   color: white;
 }
@@ -128,15 +135,15 @@ li, a{
 
 .button-special{
   position: absolute;
-  bottom: 13%;
+  bottom: 20%;
   left: 8%;
   padding: 20px;
   text-transform: uppercase;
 }
 
+/* sezione interline */
 .subtitle{
   background-color: lightgrey;
-  height: 150px;
   text-align: center;
   font-size: 24px;
 }
@@ -145,23 +152,22 @@ li, a{
   color: grey;
 }
 
-.subtitle *{
-  padding-top: 20px;
+.text-subtitle{
+  padding: 25px;
 }
 
+/* sezioni */
 .container-section{
   width: 80%;
   margin: auto;
-  height: 250px;
   padding-top: 20px;
 }
 
 .col img{
-  height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  height: 150px;
 }
 
 .col{
@@ -189,4 +195,79 @@ li, a{
 .text-section{
   color: grey;
   margin: 25px 0;
+  padding: 20px;
+}
+
+.container-section-2{
+  width: 70%;
+  margin: auto;
+}
+
+.container-section-2 img{
+  width: 50%;
+  float: left;
+  margin: 50px 50px 20px 0;
+}
+
+.text-section-2{
+  float: left;
+  width: 30%;
+  margin: 50px 0;
+}
+
+.text-section-2 h3{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-section-2 p{
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.container-section-bottom{
+  background-color: lightgrey;
+  height: 170px;
+  position: relative;
+}
+
+.text-section-bottom{
+  width: 80%;
+  margin: auto;
+
+}
+
+.text-section-bottom h4{
+  font-size: 28px;
+  display: inline-block;
+  padding: 50px 0;
+  width: 60%;
+}
+
+.text-section-bottom a{
+  font-size: 20px;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.select{
+  padding: 20px 30px 0 20px;
+  color: grey;
+  border-bottom: 1px solid grey;
+}
+
+.help{
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: green;
+  font-size: 20px;
+  width: 80px;
+  position: fixed;
+  bottom: 0;
+  right: 25%;
 }
